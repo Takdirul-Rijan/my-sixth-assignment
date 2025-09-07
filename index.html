@@ -50,27 +50,33 @@
 
       <!-- Banner -->
       <section>
-        <div>
-          <div class="banner-content text-center">
-            <div
-              class="bg-[#cff0dc] md:bg-[url('./assets/hero-leaf1.png'),url('./assets/hero-leaf2.png')] bg-no-repeat [background-position:left_center,right_center] bg-contain p-3"
-            >
-              <div class="mt-5">
-                <h1 class="text-5xl font-extrabold text-gray-900">
-                  Plant a Tree, Grow a Future
-                </h1>
-                <p class="py-4 text-gray-600">
-                  Join our mission to plant 1 million trees and make the Earth
-                  greener for future <br />
-                  generations.
-                </p>
-                <button
-                  class="btn btn-warning font-semibold rounded-3xl px-6 py-3 mb"
-                >
-                  Get Involved
-                </button>
-              </div>
+        <div class="banner-content text-center">
+          <div
+            class="flex flex-col md:flex-row items-center justify-center bg-[#cff0dc]"
+          >
+            <img src="./assets/hero-leaf1.png" alt="" class="w-80 h-80" />
+
+            <div class="my-5">
+              <h1 class="text-3xl font-extrabold text-gray-900">
+                Plant a Tree, Grow a Future
+              </h1>
+              <p class="m-5 text-gray-600">
+                Join our mission to plant 1 million trees and make the Earth
+                greener for future <br />
+                generations.
+              </p>
+              <button
+                class="btn btn-warning font-semibold rounded-3xl px-6 py-3"
+              >
+                Get Involved
+              </button>
             </div>
+
+            <img
+              src="./assets/hero-leaf2.png"
+              alt="Leaf Right"
+              class="w-80 h-80"
+            />
           </div>
         </div>
       </section>
@@ -97,5 +103,34 @@
         </div>
       </section>
     </main>
+
+    <!-- about the Campaign -->
+    <section class="max-w-7xl mx-auto bg-[#F0FDF4]">
+      <h2 class="text-center text-3xl font-[600] mb-8">About the Campaign</h2>
+
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-5 md:mx-30 p-5"
+      >
+        <div>
+          <img class="w-[530px] h-[430px]" src="./assets/about.png" alt="" />
+        </div>
+        <div class="md:w-[930px] md:h-[188px]">
+          <p class="text-gray-700 mb-3">
+            Green Earth is a global tree plantation initiative dedicated to
+            fighting <br />
+            climate change. Since our start, we’ve planted over 500,000 trees
+            <br />
+            worldwide. By joining our campaign, you help restore forests, create
+            <br />
+            habitats for wildlife, and combat global warming.
+          </p>
+          <ul class="list-disc ml-5">
+            <li>Restoration of natural habitats</li>
+            <li>Improvement of air quality</li>
+            <li>Support for local communities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
