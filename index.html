@@ -138,7 +138,7 @@
     </section>
 
     <!--  our impact section -->
-    <section class="max-w-7xl mx-auto bg-[#cff0dc] p-5">
+    <section class="max-w-7xl mx-auto bg-[#cff0dc] p-8">
       <div class="my-5">
         <h2 class="text-center text-3xl font-[600]">Our Impact</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mx-20">
@@ -154,6 +154,51 @@
             <div class="text-3xl font-bold text-green-700">30+</div>
             <div class="mt-1 text-gray-600">Countries Reached</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- plant a tree today section  -->
+    <section class="max-w-7xl mx-auto bg-[#166534] mb-16">
+      <div class="p-28">
+        <h2 class="text-center text-3xl text-white font-bold mb-8">
+          Plant a Tree Today
+        </h2>
+
+        <div
+          class="bg-[#15803D] rounded-2xl p-6 md:p-10 text-white max-w-3xl mx-auto shadow-sm"
+        >
+          <form id="donation-form" class="grid grid-cols-1 gap-4">
+            <input
+              type="text"
+              id="donor-name"
+              class="input input-bordered w-full text-red-800"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              id="donor-email"
+              class="input input-bordered w-full text-red-800"
+              placeholder="Your Email Address"
+              required
+            />
+
+            <select
+              id="donor-count"
+              class="select select-bordered w-full text-red-800"
+            >
+              <option value="1">Number of Trees</option>
+              <option value="3">Number of Trees — 3</option>
+              <option value="5">Number of Trees — 5</option>
+              <option value="10">Number of Trees — 10</option>
+            </select>
+
+            <button class="btn btn-warning font-semibold rounded-3xl mt-2">
+              Donate Now
+            </button>
+          </form>
+          <p id="donation-message" class="mt-3 text-sm opacity-90"></p>
         </div>
       </div>
     </section>
