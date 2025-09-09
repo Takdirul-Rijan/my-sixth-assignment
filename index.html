@@ -93,30 +93,46 @@
     </header>
 
     <main>
-      <!--  tree Categories section-->
-
       <section class="max-w-7xl mx-auto bg-[#F0FDF4]">
-        <div class="p-10 md:mx-10">
-          <div>
-            <h2 class="text-center text-3xl font-bold">Choose Your Trees</h2>
-          </div>
-
-          <div class="flex justify-between">
-            <aside>
-              <div><h3 class="text-xl font-semibold">Categories</h3></div>
-            </aside>
-
-            <aside>
-              <div>
-                <h3 class="bg-white text-xl font-semibold mb-4">Your Cart</h3>
-              </div>
-            </aside>
-          </div>
-          <div
-            id="plants-container"
-            class="grid grid-cols-1 md:grid-cols-3 gap-4"
-          ></div>
+        <div>
+          <h2 class="text-center text-3xl font-bold p-10">Choose Your Trees</h2>
         </div>
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_6fr_1fr] gap-4 p-10">
+          <aside>
+            <h3 class="text-xl font-semibold mb-4 text-center md:text-left">
+              Categories
+            </h3>
+            <div id="categories-container" class="space-y-2 md:w-[200px]"></div>
+          </aside>
+
+          <div>
+            <div
+              id="spinner"
+              class="fixed inset-0 hidden items-center justify-center bg-white bg-opacity-70 z-50"
+            >
+              <div
+                class="w-12 h-12 border-4 border-green-600 border-t-transparent rounded-full animate-spin"
+              ></div>
+            </div>
+
+            <div
+              id="plants-container"
+              class="grid grid-cols-1 md:grid-cols-3 gap-4"
+            ></div>
+          </div>
+
+          <aside class="bg-white rounded-xl md:w-[200px]">
+            <h3 class="text-xl font-semibold m-2">Your Cart</h3>
+            <div id="cart-container" class="space-y-2"></div>
+            <p class="flex justify-around font-bold my-4">
+              Total:<span id="cart-total">৳0</span>
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div id="plant-modal"></div>
       </section>
 
       <!-- about the Campaign -->
